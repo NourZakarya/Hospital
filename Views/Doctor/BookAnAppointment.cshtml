@@ -1,0 +1,47 @@
+﻿
+
+<form>
+    <h1>Complete Appointment with @Model.Name</h1>
+    <div class="row">
+        <h6>Patient Name</h6>
+        <div class="col">
+            <input type="text" class="form-control" placeholder="Patient Name">
+        </div>
+    </div>
+
+    <div class="cs-form">
+        <h6>Appointment Date</h6>
+        <input type="date" class="form-control"/>
+    </div>
+
+    <div class="cs-form">
+        <h6>Appointment Time</h6>
+        <input type="time" class="form-control" value="10:05 AM" />
+    </div> <br />
+    
+
+    <button type="button"
+            class="btn btn-primary"
+            data-bs-toggle="modal"
+            data-bs-target="#customModal5">
+        Complete Appointment
+    </button>
+    <div class="modal fade"
+         id="customModal5"
+         tabindex="-1"
+         role="dialog"
+         aria-labelledby="exampleModalLabel"
+         aria-hidden="true">
+        <div class="modal-dialog modal-fluid">
+            <div class="card">
+                <div class="card-body">
+                    <div class="card-title">Appointment Completed</div>
+                    <p class="card-text">
+                        Your appointment has been successfuly completed. Thank you!
+                    </p>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</form>
